@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.stackdining.wwww"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.stackdining.wwww",
+                //JPush 上注册的包名对应的 Appkey.
+                JPUSH_APPKEY : "53eb0dc10eb0af653fae85e8",
+                //暂时填写默认值即可.
+                JPUSH_CHANNEL : "developer-default",
+        ]
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-messaging-ktx:22.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+//    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+//    implementation 'com.google.firebase:firebase-analytics'
+
+    //okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    //日志拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //配置retrofit2.0
+    implementation 'com.squareup.retrofit2:retrofit:+'
+    //让retrofit2.0 支持Gson解析
+    implementation 'com.squareup.retrofit2:converter-gson:+'
+    //Glide依赖
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    //Rxjava2需要依赖
+    implementation 'io.reactivex.rxjava2:rxjava:+'
+    implementation 'io.reactivex.rxjava2:rxandroid:+'
+    //让retrofit支持Rxjava2
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:+'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper:4.0.0-beta04"
+
+    // 此处以JCore 4.0.0 版本为例
+    implementation 'cn.jiguang.sdk:jcore:4.0.0'
+    // 此处以JPush 4.8.5 版本为例
+    implementation 'cn.jiguang.sdk:jpush:4.8.5'
+    // 接入 FCM 厂商
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+    implementation 'cn.jiguang.sdk.plugin:fcm:4.8.5'
+    //paypal
+    implementation 'com.paypal.checkout:android-sdk:0.8.5'
+//    implementation "androidx.core:core-ktx:1.6.0"
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+//    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    //squareup
+    implementation "com.squareup.sdk.in-app-payments:card-entry:1.5.6"
+    //google map
+    implementation   'com.google.android.gms:play-services-maps:18.0.2'
+    implementation   'com.google.android.gms:play-services-location:19.0.1'
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    //kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //FlycoTabLayout
+    implementation 'io.github.h07000223:flycoTabLayout:3.0.0'
+
+    implementation 'com.github.donkingliang:ConsecutiveScroller:4.6.1'
+}

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Stackdining</string>
+    <string name="msg_token_fmt">test</string>
+    <string name="Signinorsignup">Sign in or sign up</string>
+    <string name="togetstarted">to get started</string>
+    <string name="one">+1</string>
+    <string name="Mobilenumber">Mobile number</string>
+    <string name="SigninSignup">Sign in /Sign up</string>
+    <string name="PasswordLogin">Password Login</string>
+    <string name="VerificationCodeLogin">Verification Code Login</string>
+    <string name="bsuyato">By signing up, you agree to our </string>
+    <string name="TermsOfUse">Terms Of Use</string>
+    <string name="and">and</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="Verify">Verify</string>
+    <string name="Codehasbeensendto">Code has been send to</string>
+    <string name="Resendcode">Resend code in 55 S</string>
+    <string name="Password">Password</string>
+    <string name="Home">Home</string>
+    <string name="Member">Member</string>
+    <string name="Order">Order</string>
+    <string name="My">My</string>
+    <string name="Collect">Collect</string>
+    <string name="Coupons">Coupons</string>
+    <string name="Payby">Pay by</string>
+    <string name="暂未开通">暂未开通</string>
+    <string name="累计已省">累计已省</string>
+    <string name="Orders">Orders</string>
+    <string name="Contactus">Contact us</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About</string>
+    <string name="Miles">Miles</string>
+    <string name="Reviews">Reviews</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="Profile">Profile</string>
+    <string name="SignOut">Sign Out</string>
+</resources>

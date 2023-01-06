@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#00000000"
+    android:clipChildren="false"
+    android:gravity="bottom"
+    android:paddingBottom="10dp"
+    tool:background="#000">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="18dp"
+            android:paddingBottom="4dp"
+            android:src="@mipmap/frame_check"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:textSize="10sp"
+            android:text="@string/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="18dp"
+            android:paddingBottom="4dp"
+            android:src="@mipmap/member"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:textSize="10sp"
+            android:text="@string/Member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <ImageButton
+            android:scaleType="centerInside"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:id="@+id/centerIcon"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/scan" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="18dp"
+            android:paddingBottom="4dp"
+            android:src="@mipmap/order"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:textSize="10sp"
+            android:text="@string/Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/fourth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:paddingTop="18dp"
+            android:paddingBottom="4dp"
+            android:src="@mipmap/my"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_fourth"
+            android:textSize="10sp"
+            android:text="@string/My"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

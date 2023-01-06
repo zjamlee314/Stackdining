@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "803680035238",
+    "project_id": "stackdin-test",
+    "storage_bucket": "stackdin-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803680035238:android:66baea6dde1acc96f22f67",
+        "android_client_info": {
+          "package_name": "com.stackdining.wwww"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803680035238-fh0t2ofu37tdqir9s4hg2ufp6bpha0l2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCchUtuaFRmxkbS69JXhzGAKnW2ounVAHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803680035238-fh0t2ofu37tdqir9s4hg2ufp6bpha0l2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "803680035238-e0i7gqr3sprm7sag38vi50leii7208a7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stackdining.www"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
